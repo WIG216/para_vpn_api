@@ -20,7 +20,9 @@ export const createServer = async (req: Request, res: Response) => {
             return res.status(400).json(errorResponse(errorCodes.server.nameExists));
         }
 
-        const imageUrl = `http://localhost:${process.env.PORT}/uploads/${req.file.filename}`;
+        const imageUrl = process.env.NODE_ENV === 'production'
+            ? `https://${process.env.DOMAIN}/uploads/${req.file.filename}`
+            : `http://localhost:${process.env.PORT}/uploads/${req.file.filename}`;
 
         const server = new Server({
             name: req.body.name,
@@ -95,7 +97,10 @@ export const updateServer = async (req: Request, res: Response) => {
         }
 
         if (req.file) {
-            const newImageUrl = `http://localhost:${process.env.PORT}/uploads/${req.file.filename}`;
+            const newImageUrl = process.env.NODE_ENV === 'production'
+                ? `https://${process.env.DOMAIN}/uploads/${req.file.filename}`
+                : `http://localhost:${process.env.PORT}/uploads/${req.file.filename}`;
+
             const file = path.basename(server.image)
             const oldImagePath = path.join(__dirname, '..', '..', '..', 'uploads', file);
 
@@ -115,7 +120,7 @@ export const updateServer = async (req: Request, res: Response) => {
     } catch (error: any) {
         logger.error(error.message)
         res.status(500).json(errorResponse(errorCodes.internalServerError));
-        
+
     }
 };
 
