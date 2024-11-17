@@ -1,0 +1,14 @@
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Server\"","timestamp":"2024-11-17T04:14:00.810Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Server\"","timestamp":"2024-11-17T04:15:30.442Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Server\"","timestamp":"2024-11-17T04:15:34.611Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Server\"","timestamp":"2024-11-17T04:15:59.285Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Server\"","timestamp":"2024-11-17T04:16:01.200Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Server\"","timestamp":"2024-11-17T04:16:12.633Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Server\"","timestamp":"2024-11-17T04:16:49.217Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Server\"","timestamp":"2024-11-17T04:17:15.510Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Server\"","timestamp":"2024-11-17T04:28:51.542Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Server\"","timestamp":"2024-11-17T04:29:00.565Z"}
+{"level":"error","message":"E11000 duplicate key error collection: para_vpn.servers index: name_1 dup key: { name: \"Netherland\" }","timestamp":"2024-11-17T04:41:43.975Z"}
+{"level":"error","message":"E11000 duplicate key error collection: para_vpn.servers index: name_1 dup key: { name: \"Netherland\" }","timestamp":"2024-11-17T04:46:10.577Z"}
+{"level":"error","message":"E11000 duplicate key error collection: para_vpn.servers index: name_1 dup key: { name: \"Netherland\" }","timestamp":"2024-11-17T04:50:33.269Z"}
+{"level":"error","message":"E11000 duplicate key error collection: para_vpn.servers index: name_1 dup key: { name: \"Camero\" }","timestamp":"2024-11-17T05:00:35.161Z"}
